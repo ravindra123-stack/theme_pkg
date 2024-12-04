@@ -6,21 +6,21 @@ class KashiColors {
     100: Color(0xFFC8E6C9),
     200: Color(0xFFe8f6f4),
     300: Color(0xFFB8E0D9),
-    400: primary2,
-    500: Color(0xFFFF7700),
+    400: primary02,
+    500: Color(0xFF1C314A), //0xFF1C314A //0xFFFF7700
     600: Color(0xFF146657),
     700: Color(0xFF388E3C),
     800: Color(0xFF2E7D32),
     900: Color(0xFF1B5E20),
   };
-  static const MaterialColor primaryColor = MaterialColor(0xFF532D19, _orangeColor);
+  static const MaterialColor primaryColor = MaterialColor(0xFF4A3BF7, _orangeColor);
   static const Color primary2 = Color(0xFFFF7700);
   static const Color primary02 = Color(0xFF1C314A); //0xFF532D19
   static const Color primary4 = Color(0xFFB8E0D9);
   static const Color primary04 = Color(0xFFB75010);
   static const Color primary5 = Color(0xFFE9F7F4);
   static const Color primary6 = Color(0xFFFFD6AD);
-  static const Color primary06 = Color(0xFF4A3BF7);
+  static const Color primary06 = Color(0xFF532D19); //0xFF4A3BF7
   static const Color primary07 = Color(0xFF17181B);
   static const Color primary08 = Color(0xFF0E0E0F);
   static const Color bg1 = Color(0xFF292929);
