@@ -45,9 +45,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   print("Outline Button Clicked");
                 },
-                size: ButtonSize.md,
-                backgroundColor: Colors.blue,
-                textColor: Colors.white,
+                 context: context,
               ),
               const SizedBox(height: 20),
               Buttons.primary(
@@ -55,9 +53,9 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   print("Primary Button Clicked");
                 },
-                size: ButtonSize.md,
-                backgroundColor: Colors.blue,
-                textColor: Colors.white,
+           
+                 context: context,
+               
               ),
               const SizedBox(height: 20),
               Buttons.text(

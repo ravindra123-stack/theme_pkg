@@ -11,6 +11,7 @@ rectBorderRadiusX(double x, Color? color) => RoundedRectangleBorder(
 class Buttons {
   static Widget primary(
       {required String text,
+      required dynamic context,
       required VoidCallback? onPressed,
       bool loading = false,
       ButtonSize size = ButtonSize.md,
@@ -94,9 +95,10 @@ class Buttons {
       bool stretch = true,
       Color? boarderColor,
       EdgeInsetsGeometry margin = EdgeInsets.zero,
-      EdgeInsetsGeometry? padding}) {
+      EdgeInsetsGeometry? padding, required dynamic context}) {
     return primary(
         text: text,
+        context: context?? Colors.white,
         onPressed: onPressed,
         loading: loading,
         prefixIcon: prefixIcon,
