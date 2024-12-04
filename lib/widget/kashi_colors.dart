@@ -13,9 +13,9 @@ class KashiColors {
     800: Color(0xFF2E7D32),
     900: Color(0xFF1B5E20),
   };
-  static const MaterialColor primaryColor = MaterialColor(0xFFFF7700, _orangeColor);
-  static const Color primary2 = Color(0xFF532D19);
-  static const Color primary02 = Color(0xFF1C314A);
+  static const MaterialColor primaryColor = MaterialColor(0xFF532D19, _orangeColor);
+  static const Color primary2 = Color(0xFFFF7700);
+  static const Color primary02 = Color(0xFF1C314A); //0xFF532D19
   static const Color primary4 = Color(0xFFB8E0D9);
   static const Color primary04 = Color(0xFFB75010);
   static const Color primary5 = Color(0xFFE9F7F4);

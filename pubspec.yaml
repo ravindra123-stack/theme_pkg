@@ -1,7 +1,7 @@
 name: theme_pkg
 description: "A new Flutter widget for buttons."
 version: 0.0.1
-homepage:
+homepage: https://github.com/ravindra123-stack/theme_pkg.git
 
 environment:
   sdk: ^3.5.4
