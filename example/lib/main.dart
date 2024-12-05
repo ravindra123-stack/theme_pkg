@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:theme_pkg/buttons/button.dart';
-import 'package:theme_pkg/buttons/button_util.dart';
+import 'package:theme_pkg/widget/kashi_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: KashiTheme.buildTheme(
+          buttonColor: Colors.green),
       home: const HomePage(),
     );
   }
@@ -45,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   print("Outline Button Clicked");
                 },
-                 context: context,
+                context: context,
               ),
               const SizedBox(height: 20),
               Buttons.primary(
@@ -53,9 +51,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   print("Primary Button Clicked");
                 },
-           
-                 context: context,
-               
+                context: context,
               ),
               const SizedBox(height: 20),
               Buttons.text(
@@ -63,7 +59,8 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   print("Text Button Clicked");
                 },
-                textColor: Colors.black,
+               
+                context: context,
               ),
             ],
           ),

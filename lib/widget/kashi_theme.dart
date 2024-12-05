@@ -7,8 +7,11 @@ import 'package:theme_pkg/widget/kashi_colors.dart';
 export 'kashi_colors.dart';
 class KashiTheme {
   static final ThemeData _theme = ThemeData(
-      primarySwatch: KashiColors.primaryColor, primaryColor: KashiColors.primaryColor, brightness: Brightness.dark);
-  static ThemeData buildTheme() {
+      primarySwatch: KashiColors.primaryColor,
+       primaryColor: KashiColors.primaryColor, 
+       brightness: Brightness.dark);
+
+  static ThemeData buildTheme({required MaterialColor buttonColor}) {
     return _theme.copyWith(
       scaffoldBackgroundColor: KashiColors.grey1,
       colorScheme: ColorScheme.fromSeed(seedColor: KashiColors.primaryColor),
@@ -27,6 +30,10 @@ class KashiTheme {
           color: Colors.white,
         ),
       )),
+    // Pass the buttonColor to the theme
+    buttonTheme: ButtonThemeData(
+      buttonColor: buttonColor,
+    ),
     );
   }
   /// we used total 3 fonts family
