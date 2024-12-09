@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:theme_pkg/buttons/button.dart';
-import 'package:theme_pkg/widget/kashi_theme.dart';
+import 'package:theme_pkg/ui/components/button.dart';
+import 'package:theme_pkg/ui/themes/zen_theme.dart';
 
 void main() {
+  ZenColors.schemeColor = SchemeColor(primaryColor: Colors.yellow);
   runApp(const MyApp());
 }
 
@@ -12,8 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: KashiTheme.buildTheme(
-          buttonColor: Colors.green),
+      theme: ZenTheme.buildTheme(),
       home: const HomePage(),
     );
   }
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Buttons demo"),
+          title: const Text("Buttons"),
         ),
         body: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -59,7 +59,6 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   print("Text Button Clicked");
                 },
-               
                 context: context,
               ),
             ],

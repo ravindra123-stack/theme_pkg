@@ -1,6 +1,6 @@
 library theme_pkg;
 import 'package:flutter/material.dart';
-class ButtonThemeData {
+class ZenThemeData {
   final Color primaryColor;
   final Color secondaryColor;
   final Color outlineBorderColor;
@@ -9,7 +9,7 @@ class ButtonThemeData {
   final TextStyle primaryTextStyle;
   final TextStyle secondaryTextStyle;
 
-  const ButtonThemeData({
+  const ZenThemeData({
     this.primaryColor = Colors.blue,
     this.secondaryColor = Colors.white,
     this.outlineBorderColor = Colors.grey,
@@ -28,22 +28,22 @@ class ButtonThemeData {
   });
 }
 
-class ButtonTheme extends InheritedWidget {
-  final ButtonThemeData data;
+class ZenThemePackage extends InheritedWidget {
+  final ZenThemeData data;
 
-   const ButtonTheme({
+   const ZenThemePackage({
     super.key,
     required this.data,
     required Widget child,
   }) : super(child: child);
 
-  static ButtonThemeData of(BuildContext context) {
-    final ButtonTheme? inheritedTheme = context.dependOnInheritedWidgetOfExactType<ButtonTheme>();
-    return inheritedTheme?.data ?? const ButtonThemeData(); 
+  static ZenThemeData of(BuildContext context) {
+    final ZenThemePackage? inheritedTheme = context.dependOnInheritedWidgetOfExactType<ZenThemePackage>();
+    return inheritedTheme?.data ?? const ZenThemeData(); 
   }
 
   @override
-  bool updateShouldNotify(ButtonTheme oldWidget) {
+  bool updateShouldNotify(ZenThemePackage oldWidget) {
     return data != oldWidget.data;
   }
 }

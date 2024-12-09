@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:theme_pkg/button_theme.dart';
+import 'package:theme_pkg/ui/themes/zen_theme_package.dart';
 
 void main() {
   test('adds one to input values', () {

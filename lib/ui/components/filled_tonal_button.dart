@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:theme_pkg/widget/kashi_colors.dart';
+import 'package:theme_pkg/ui/themes/zen_colors.dart';
 
 class FilledTonalIconButton extends StatelessWidget {
   final VoidCallback? onPressed;
@@ -12,14 +12,14 @@ class FilledTonalIconButton extends StatelessWidget {
     return IconButton(
       onPressed: onPressed,
       icon: icon,
-      color: Colors.white,
+      color: ZenColors.schemeColor.backgroundColor,
       style: IconButton.styleFrom(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
-          side: BorderSide(color: borderColor ?? KashiColors.grey5),
+          side: BorderSide(color: borderColor ?? ZenColors.grey5),
         ),
-        backgroundColor: bgColor ?? Colors.white,
-        foregroundColor: KashiColors.grey1,
+        backgroundColor: bgColor ?? ZenColors.schemeColor.backgroundColor,
+        foregroundColor: ZenColors.schemeColor.backgroundColor,
       ),
     );
   }
